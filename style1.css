@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    background-color: rgba(255, 255, 255, 0.467);
+    padding: 50px;
+    text-align: center;
+}
+
+.prediction-tool {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Focus state for inputs */
+input[type="number"]:focus,
+select:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Add a subtle shadow */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41; /* Darker shade on click */
+}
+
+#results {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+#footer {
+    text-align: center;
+    color: black; 
+    background-color: rgba(255, 255, 255, 0.467); 
+    padding: 15px 0; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .prediction-tool {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    button {
+        width: 100%; /* Full width buttons on smaller screens */
+    }
+}
